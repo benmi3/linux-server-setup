@@ -2,7 +2,7 @@
 - [kubernetes setup](https://developer.ibm.com/tutorials/set-up-kubernetes-on-rhel-running-on-power/)
 
 ---
-- [General setup]([https://wiki.almalinux.org/documentation/installation-guide.html#installation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/performing_a_standard_rhel_9_installation/index))
+- [General setup](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/performing_a_standard_rhel_9_installation/index)
 
 - Create new user, add this user to wheel and docker group
 ```bash
