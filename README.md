@@ -1,9 +1,9 @@
 - [RHEL](https://www.redhat.com/sysadmin/linux-homelab-rhel)
--[kubernetes setup](https://developer.ibm.com/tutorials/set-up-kubernetes-on-rhel-running-on-power/)
+- [kubernetes setup](https://developer.ibm.com/tutorials/set-up-kubernetes-on-rhel-running-on-power/)
 
 ---
-- [General setup](https://wiki.almalinux.org/documentation/installation-guide.html#installation)
-- [After first boot](https://wiki.almalinux.org/documentation/after-installation-guide.html#update-the-system-and-check-for-security-updates)
+- [General setup]([https://wiki.almalinux.org/documentation/installation-guide.html#installation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/performing_a_standard_rhel_9_installation/index))
+
 - Create new user, add this user to wheel and docker group
 ```bash
 sudo useradd -g users -G wheel,docker benmi3
