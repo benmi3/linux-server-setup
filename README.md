@@ -28,8 +28,9 @@ sudo useradd -m benmi3
 
 - [*If I go for nginx* Certbot](https://qiita.com/You_name_is_YU/items/661f2654fb6f21ff0eb9)
 
-- [Traefik with podman](https://gerov.eu/posts/traefik-for-podman/🚡)
+- [Podman](https://technixleo.com/podman-buildah-on-rhel-centos-alma/#:~:text=Install%20Podman%20on%20RHEL%209%20%2F%20CentOS%209,the%20following%20command%20sudo%20yum%20install%20podman%20-y)
 
+- [Traefik with podman](https://gerov.eu/posts/traefik-for-podman/🚡)
 
 ## Sources
 - [User creation](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/)
