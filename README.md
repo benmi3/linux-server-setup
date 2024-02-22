@@ -32,10 +32,8 @@ sudo useradd -m benmi3
 ## Reverse proxy & Web Server
 
 - [RHEL Nginx](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/deploying_web_servers_and_reverse_proxies/index#setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies)
-- 
-- [RHEL Snapd for certbot](https://snapcraft.io/install/certbot/rhel)
-- 
-- [RHEL Certbot for NGINX](https://certbot.eff.org/)
+
+- [RHEL Certbox from pip](https://certbot.eff.org/instructions?ws=nginx&os=pip&tab=wildcard)
 
 ## Podman 
 
