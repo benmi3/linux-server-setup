@@ -26,6 +26,8 @@ sudo passwd benmi3
 sudo useradd -m benmi3
 ```
 
+- [RHEL Nginx](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/deploying_web_servers_and_reverse_proxies/index#setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies)
+
 - [*If I go for nginx* Certbot](https://qiita.com/You_name_is_YU/items/661f2654fb6f21ff0eb9)
 
 - [Podman](https://technixleo.com/podman-buildah-on-rhel-centos-alma/#:~:text=Install%20Podman%20on%20RHEL%209%20%2F%20CentOS%209,the%20following%20command%20sudo%20yum%20install%20podman%20-y)
