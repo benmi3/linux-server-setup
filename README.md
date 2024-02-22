@@ -1,4 +1,7 @@
-- [RHEL](https://www.redhat.com/sysadmin/linux-homelab-rhel)
+- [RHEL for Developers](https://developers.redhat.com/about)
+
+- [RHEL in homelabs](https://www.redhat.com/sysadmin/linux-homelab-rhel)
+
 - [kubernetes setup](https://developer.ibm.com/tutorials/set-up-kubernetes-on-rhel-running-on-power/)
 
 ---
