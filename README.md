@@ -31,9 +31,17 @@ sudo useradd -m benmi3
 
 ## Reverse proxy & Web Server
 
+### NginX
+
 - [RHEL Nginx](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/deploying_web_servers_and_reverse_proxies/index#setting-up-and-configuring-nginx_deploying-web-servers-and-reverse-proxies)
 
-- [RHEL Certbox from pip](https://certbot.eff.org/instructions?ws=nginx&os=pip&tab=wildcard)
+- [Manual Cloudflare TLS setup guide](https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-20-04)
+
+- [Certbox from pip](https://certbot.eff.org/instructions?ws=nginx&os=pip&tab=wildcard)
+
+### Traefik
+
+- [Traefik](https://doc.traefik.io/traefik/getting-started/install-traefik/)
 
 ## Podman 
 
