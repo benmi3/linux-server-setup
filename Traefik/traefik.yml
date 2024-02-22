@@ -1,0 +1,193 @@
+# https://doc.traefik.io/traefik/reference/static-configuration/file/
+# https://github.com/ChristianLempa/boilerplates/blob/main/docker-compose/traefik/config/traefik.yaml
+
+global:
+  checkNewVersion: true
+  sendAnonymousUsage: true
+serversTransport:
+  insecureSkipVerify: true
+  rootCAs:
+    - foobar
+    - foobar
+  maxIdleConnsPerHost: 42
+  forwardingTimeouts:
+    dialTimeout: 42s
+    responseHeaderTimeout: 42s
+    idleConnTimeout: 42s
+entryPoints:
+  EntryPoint0:
+    address: foobar
+    transport:
+      lifeCycle:
+        requestAcceptGraceTimeout: 42s
+        graceTimeOut: 42s
+      respondingTimeouts:
+        readTimeout: 42s
+        writeTimeout: 42s
+        idleTimeout: 42s
+    proxyProtocol:
+      insecure: true
+      trustedIPs:
+        - foobar
+        - foobar
+    forwardedHeaders:
+      insecure: true
+      trustedIPs:
+        - foobar
+        - foobar
+    http:
+      encodeQuerySemicolons: true
+      redirections:
+        entryPoint:
+          to: foobar
+          scheme: foobar
+          permanent: true
+          priority: 42
+      middlewares:
+        - foobar
+        - foobar
+      tls:
+        options: foobar
+        certResolver: foobar
+        domains:
+          - main: foobar
+            sans:
+              - foobar
+              - foobar
+          - main: foobar
+            sans:
+              - foobar
+              - foobar
+    http2:
+      maxConcurrentStreams: 42
+    http3:
+      advertisedPort: 42
+    udp:
+      timeout: 42s
+providers:
+  providersThrottleDuration: 42s
+  file:
+    directory: /path/to/config
+    watch: true
+    #filename: foobar
+    debugLogGeneratedTemplate: true
+  lugin:
+    Descriptor0: {}
+    Descriptor1: {}
+api:
+  insecure: true
+  dashboard: true
+  debug: true
+  disabledashboardad: false
+metrics:
+  prometheus:
+    buckets:
+      - 42
+      - 42
+    addEntryPointsLabels: true
+    addRoutersLabels: true
+    addServicesLabels: true
+    entryPoint: foobar
+    manualRouting: true
+    headerLabels:
+      label1: foobar
+      label2: foobar
+  log:
+  level: foobar
+  filePath: foobar
+  format: foobar
+accessLog:
+  filePath: foobar
+  format: foobar
+  filters:
+    statusCodes:
+      - foobar
+      - foobar
+    retryAttempts: true
+    minDuration: 42s
+  fields:
+    defaultMode: foobar
+    names:
+      name0: foobar
+      name1: foobar
+    headers:
+      defaultMode: foobar
+      names:
+        name0: foobar
+        name1: foobar
+  bufferingSize: 42
+tracing:
+  serviceName: foobar
+  spanNameLimit: 42
+  jaeger:
+    samplingServerURL: foobar
+    samplingType: foobar
+    samplingParam: 42
+    localAgentHostPort: foobar
+    gen128Bit: true
+    propagation: foobar
+    traceContextHeaderName: foobar
+    disableAttemptReconnecting: true
+    collector:
+      endpoint: foobar
+      user: foobar
+      password: foobar
+certificatesResolvers:
+  CertificateResolver0:
+    acme:
+      email: foobar
+      caServer: foobar
+      certificatesDuration: 42
+      preferredChain: foobar
+      storage: foobar
+      keyType: foobar
+      eab:
+        kid: foobar
+        hmacEncoded: foobar
+      dnsChallenge:
+        provider: foobar
+        delayBeforeCheck: 42s
+        resolvers:
+          - foobar
+          - foobar
+        disablePropagationCheck: true
+      httpChallenge:
+        entryPoint: foobar
+      tlsChallenge: {}
+  CertificateResolver1:
+    acme:
+      email: foobar
+      caServer: foobar
+      certificatesDuration: 42
+      preferredChain: foobar
+      storage: foobar
+      keyType: foobar
+      eab:
+        kid: foobar
+        hmacEncoded: foobar
+      dnsChallenge:
+        provider: foobar
+        delayBeforeCheck: 42s
+        resolvers:
+          - foobar
+          - foobar
+        disablePropagationCheck: true
+      httpChallenge:
+        entryPoint: foobar
+      tlsChallenge: {}
+
+experimental:
+  kubernetesGateway: true
+  http3: true
+  plugins:
+    Descriptor0:
+      moduleName: foobar
+      version: foobar
+    Descriptor1:
+      moduleName: foobar
+      version: foobar
+  localPlugins:
+    Descriptor0:
+      moduleName: foobar
+    Descriptor1:
+      moduleName: foobar
