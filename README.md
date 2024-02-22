@@ -30,6 +30,8 @@ sudo useradd -m benmi3
 
 - [Podman](https://technixleo.com/podman-buildah-on-rhel-centos-alma/#:~:text=Install%20Podman%20on%20RHEL%209%20%2F%20CentOS%209,the%20following%20command%20sudo%20yum%20install%20podman%20-y)
 
+- [RHEL podman](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/building_running_and_managing_containers/index)
+
 - [Traefik with podman](https://gerov.eu/posts/traefik-for-podman/🚡)
 
 ## Sources
