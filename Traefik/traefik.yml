@@ -1,69 +1,45 @@
 # https://doc.traefik.io/traefik/reference/static-configuration/file/
 # https://github.com/ChristianLempa/boilerplates/blob/main/docker-compose/traefik/config/traefik.yaml
-
+# https://technotim.live/posts/crowdsec-traefik/
+#
+#
+#
+# ------------------------------------- Global
 global:
-  checkNewVersion: true
-  sendAnonymousUsage: true
-serversTransport:
-  insecureSkipVerify: true
-  rootCAs:
-    - foobar
-    - foobar
-  maxIdleConnsPerHost: 42
-  forwardingTimeouts:
-    dialTimeout: 42s
-    responseHeaderTimeout: 42s
-    idleConnTimeout: 42s
+  checkNewVersion: false
+  sendAnonymousUsage: false
+# ------------------------------------- Servers Transport
+#serversTransport:
+#  insecureSkipVerify: true
+#  rootCAs:
+#    - foobar
+#    - foobar
+#  maxIdleConnsPerHost: 42
+#  forwardingTimeouts:
+#    dialTimeout: 42s
+#    responseHeaderTimeout: 42s
+#    idleConnTimeout: 42s
+# ------------------------------------- Entry Points
 entryPoints:
-  EntryPoint0:
-    address: foobar
-    transport:
-      lifeCycle:
-        requestAcceptGraceTimeout: 42s
-        graceTimeOut: 42s
-      respondingTimeouts:
-        readTimeout: 42s
-        writeTimeout: 42s
-        idleTimeout: 42s
-    proxyProtocol:
-      insecure: true
-      trustedIPs:
-        - foobar
-        - foobar
-    forwardedHeaders:
-      insecure: true
-      trustedIPs:
-        - foobar
-        - foobar
+  http:
+    address: ":80"
     http:
-      encodeQuerySemicolons: true
       redirections:
-        entryPoint:
-          to: foobar
-          scheme: foobar
-          permanent: true
-          priority: 42
+        entrypoint:
+          to: "https"
+          scheme: "https"
+  https:
+    adress: ":443"
+    http:
       middlewares:
-        - foobar
-        - foobar
-      tls:
-        options: foobar
-        certResolver: foobar
-        domains:
-          - main: foobar
-            sans:
-              - foobar
-              - foobar
-          - main: foobar
-            sans:
-              - foobar
-              - foobar
-    http2:
-      maxConcurrentStreams: 42
-    http3:
-      advertisedPort: 42
-    udp:
-      timeout: 42s
+        - crowdsec-bouncer@file
+#    http2:
+#      maxConcurrentStreams: 42
+#    http3:
+#      advertisedPort: 42
+#    udp:
+#      timeout: 42s
+# ------------------------------------- Providers
 providers:
   providersThrottleDuration: 42s
   file:
@@ -71,14 +47,13 @@ providers:
     watch: true
     #filename: foobar
     debugLogGeneratedTemplate: true
-  lugin:
-    Descriptor0: {}
-    Descriptor1: {}
+# ------------------------------------- API
 api:
   insecure: true
   dashboard: true
-  debug: true
-  disabledashboardad: false
+#  debug: true
+#  disabledashboardad: false
+# ------------------------------------- Metrics
 metrics:
   prometheus:
     buckets:
@@ -92,10 +67,12 @@ metrics:
     headerLabels:
       label1: foobar
       label2: foobar
-  log:
+# ------------------------------------- Log
+log:
   level: foobar
   filePath: foobar
   format: foobar
+# ------------------------------------- Accesslog
 accessLog:
   filePath: foobar
   format: foobar
@@ -116,6 +93,7 @@ accessLog:
         name0: foobar
         name1: foobar
   bufferingSize: 42
+# ------------------------------------- Tracing
 tracing:
   serviceName: foobar
   spanNameLimit: 42
@@ -132,6 +110,7 @@ tracing:
       endpoint: foobar
       user: foobar
       password: foobar
+# ------------------------------------- Certificates Resolvers
 certificatesResolvers:
   CertificateResolver0:
     acme:
@@ -175,7 +154,7 @@ certificatesResolvers:
       httpChallenge:
         entryPoint: foobar
       tlsChallenge: {}
-
+# ------------------------------------- Certificates
 experimental:
   kubernetesGateway: true
   http3: true

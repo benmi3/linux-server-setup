@@ -1,4 +1,7 @@
 # Basic setup guide for a linux server
+
+** ---- STILL UNDER CONSTRUCTION ---- **
+
 Recommended reads: [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server), [RHEL Security](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/index)
 
 - [RHEL for Developers](https://developers.redhat.com/about)
@@ -50,6 +53,8 @@ sudo useradd -m benmi3
 Will Set up Traefik on bare metal/Binaries, as I will need to run it with root permitions, as it is going to access port 80 and 443
 
 - [Traefik](https://doc.traefik.io/traefik/getting-started/install-traefik/)
+
+- [Crowsec and Traefik](https://technotim.live/posts/crowdsec-traefik/)
 
 ## Podman 
 
