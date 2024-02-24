@@ -1,5 +1,6 @@
 # https://doc.traefik.io/traefik/providers/file/#directory
 # https://doc.traefik.io/traefik/reference/dynamic-configuration/file/
+#https://github.com/techno-tim/techno-tim.github.io/blob/master/reference_files/traefik-portainer-ssl/traefik/config.yml
 
 http:
   routers:

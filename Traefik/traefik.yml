@@ -33,10 +33,10 @@ entryPoints:
     http:
       middlewares:
         - crowdsec-bouncer@file
-#    http2:
-#      maxConcurrentStreams: 42
-#    http3:
-#      advertisedPort: 42
+    http2:
+      maxConcurrentStreams: 42
+    http3:
+      advertisedPort: 42
 #    udp:
 #      timeout: 42s
 # ------------------------------------- Providers
@@ -94,79 +94,51 @@ accessLog:
         name1: foobar
   bufferingSize: 42
 # ------------------------------------- Tracing
-tracing:
-  serviceName: foobar
-  spanNameLimit: 42
-  jaeger:
-    samplingServerURL: foobar
-    samplingType: foobar
-    samplingParam: 42
-    localAgentHostPort: foobar
-    gen128Bit: true
-    propagation: foobar
-    traceContextHeaderName: foobar
-    disableAttemptReconnecting: true
-    collector:
-      endpoint: foobar
-      user: foobar
-      password: foobar
+#tracing:
+#  serviceName: foobar
+#  spanNameLimit: 42
+#  jaeger:
+#    samplingServerURL: foobar
+#    samplingType: foobar
+#    samplingParam: 42
+#    localAgentHostPort: foobar
+#    gen128Bit: true
+#    propagation: foobar
+#    traceContextHeaderName: foobar
+#    disableAttemptReconnecting: true
+#    collector:
+#      endpoint: foobar
+#      user: foobar
+#      password: foobar
 # ------------------------------------- Certificates Resolvers
 certificatesResolvers:
-  CertificateResolver0:
+  staging:
     acme:
-      email: foobar
-      caServer: foobar
-      certificatesDuration: 42
-      preferredChain: foobar
-      storage: foobar
-      keyType: foobar
-      eab:
-        kid: foobar
-        hmacEncoded: foobar
+      email: your-email@example.com
+      storage: /path/to/certs/acme.json
+      caServer: "https://acme-staging-v02.api.letsencrypt.org/directory"
       dnsChallenge:
-        provider: foobar
-        delayBeforeCheck: 42s
+        provider: your-resolver (e.g. cloudflare)
         resolvers:
-          - foobar
-          - foobar
-        disablePropagationCheck: true
-      httpChallenge:
-        entryPoint: foobar
-      tlsChallenge: {}
-  CertificateResolver1:
+          - "1.1.1.1:53"
+          - "8.8.8.8:53"
+  production:
     acme:
-      email: foobar
-      caServer: foobar
-      certificatesDuration: 42
-      preferredChain: foobar
-      storage: foobar
-      keyType: foobar
-      eab:
-        kid: foobar
-        hmacEncoded: foobar
+      email: your-email@example.com
+      storage: /path/to/certs/acme.json
+      caServer: "https://acme-v02.api.letsencrypt.org/directory"
       dnsChallenge:
-        provider: foobar
-        delayBeforeCheck: 42s
+        provider: your-resolver (e.g. cloudflare)
         resolvers:
-          - foobar
-          - foobar
-        disablePropagationCheck: true
-      httpChallenge:
-        entryPoint: foobar
-      tlsChallenge: {}
+          - "1.1.1.1:53"
+          - "8.8.8.8:53"
+
 # ------------------------------------- Certificates
 experimental:
   kubernetesGateway: true
   http3: true
-  plugins:
-    Descriptor0:
-      moduleName: foobar
-      version: foobar
-    Descriptor1:
-      moduleName: foobar
-      version: foobar
-  localPlugins:
-    Descriptor0:
-      moduleName: foobar
-    Descriptor1:
-      moduleName: foobar
+#  plugins:
+#    # https://plugins.traefik.io/plugins/6335346ca4caa9ddeffda116/crowdsec-bouncer-traefik-plugin
+#    crowdsec-bouncer-traefik-plugin:
+#      moduleName: "github.com/maxlerebourg/crowdsec-bouncer-traefik-plugin"
+#      version: "v1.2.1-rc1"

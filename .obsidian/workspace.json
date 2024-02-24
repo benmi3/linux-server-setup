@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "da8317742ca4a650",
+    "type": "split",
+    "children": [
+      {
+        "id": "cca2f33f2d911a83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd6df3eec168288f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Keycloak/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e24423bdc63db0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Crowdsec/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c1dbfdb7635339ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "99414d1ad382a406",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d21feea63da8ee35",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9a00a0ddb846e46d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ddb5afdfdb4e3db4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "71c0d34a5e186b08",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e75757fdd852eef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1242f146096c72f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Keycloak/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "027d8237e8fc422c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Keycloak/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "524a863ac4a46642",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "99cb5fad3de277e3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Keycloak/README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "fd6df3eec168288f",
+  "lastOpenFiles": [
+    "Keycloak/docs",
+    "Crowdsec/README.md",
+    "Keycloak/README.md",
+    "Traefik/README.md",
+    "Crowdsec"
+  ]
+}
