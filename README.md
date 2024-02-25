@@ -37,6 +37,13 @@ Add Home Dir (If needed)
 sudo useradd -m benmi3
 ```
 
+### dont need cups (printers)
+    
+
+```bash
+systemctl mask cups
+```
+
 ## Reverse proxy & Web Server
 
 ### NginX

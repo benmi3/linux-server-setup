@@ -29,10 +29,10 @@ entryPoints:
           to: "https"
           scheme: "https"
   https:
-    adress: ":443"
-    http:
-      middlewares:
-        - crowdsec-bouncer@file
+    address: ":443"
+#    http:
+#      middlewares:
+#        - crowdsec-bouncer@file
     http2:
       maxConcurrentStreams: 42
     http3:
@@ -54,45 +54,45 @@ api:
 #  debug: true
 #  disabledashboardad: false
 # ------------------------------------- Metrics
-metrics:
-  prometheus:
-    buckets:
-      - 42
-      - 42
-    addEntryPointsLabels: true
-    addRoutersLabels: true
-    addServicesLabels: true
-    entryPoint: foobar
-    manualRouting: true
-    headerLabels:
-      label1: foobar
-      label2: foobar
+#metrics:
+#  prometheus:
+#    buckets:
+#      - 42
+#      - 42
+#    addEntryPointsLabels: true
+#    addRoutersLabels: true
+#    addServicesLabels: true
+#    entryPoint: foobar
+#    manualRouting: true
+#    headerLabels:
+#      label1: foobar
+#      label2: foobar
 # ------------------------------------- Log
 log:
-  level: foobar
-  filePath: foobar
-  format: foobar
+  level: info
+#  filePath: foobar
+#  format: foobar
 # ------------------------------------- Accesslog
-accessLog:
-  filePath: foobar
-  format: foobar
-  filters:
-    statusCodes:
-      - foobar
-      - foobar
-    retryAttempts: true
-    minDuration: 42s
-  fields:
-    defaultMode: foobar
-    names:
-      name0: foobar
-      name1: foobar
-    headers:
-      defaultMode: foobar
-      names:
-        name0: foobar
-        name1: foobar
-  bufferingSize: 42
+#accessLog:
+#  filePath: foobar
+#  format: foobar
+#  filters:
+#    statusCodes:
+#      - foobar
+#      - foobar
+#    retryAttempts: true
+#    minDuration: 42s
+#  fields:
+#    defaultMode: foobar
+#    names:
+#      name0: foobar
+#      name1: foobar
+#    headers:
+#      defaultMode: foobar
+#      names:
+#        name0: foobar
+#        name1: foobar
+#  bufferingSize: 42
 # ------------------------------------- Tracing
 #tracing:
 #  serviceName: foobar
