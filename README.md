@@ -3,7 +3,7 @@
 ** ---- STILL UNDER CONSTRUCTION ---- **
 
 Recommended reads: [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server), [RHEL Security](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/index)
-
+[https://github.com/ChristianLempa/boilerplates/tree/main](https://github.com/ChristianLempa/boilerplates/tree/main)
 - [RHEL for Developers](https://developers.redhat.com/about)
 
 - [RHEL in homelabs](https://www.redhat.com/sysadmin/linux-homelab-rhel)
