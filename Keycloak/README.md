@@ -11,7 +11,7 @@ bin/kc.sh start-dev
 ```
 This should start the app up on port 8080.
 
-
+[https://geek-cookbook.funkypenguin.co.nz/docker-swarm/traefik-forward-auth/keycloak/](https://geek-cookbook.funkypenguin.co.nz/docker-swarm/traefik-forward-auth/keycloak/)
 
 ### [Proxy Mode](https://www.keycloak.org/server/reverseproxy)
 
