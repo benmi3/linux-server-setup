@@ -4,7 +4,7 @@
 
 Recommended reads: [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server), [RHEL Security](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/index)
 [https://github.com/ChristianLempa/boilerplates/tree/main](https://github.com/ChristianLempa/boilerplates/tree/main)
-
+HTTPD:[Link](https://httpd.apache.org/docs/2.2/en/vhosts/name-based.html)
 Remember that SELinux likes to block file access. This might lead to problems with config file readings.
 
 - [RHEL for Developers](https://developers.redhat.com/about)
